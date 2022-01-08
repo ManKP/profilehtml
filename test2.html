@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Membership
+</title>
+</head>
+<body>
+<h1>Membership</h1>
+<!--Create two <div> elements-->
+<div id="div1"></div>
+<div id="div2"></div>
+<!--Javascript-->
+<script>
+/*declare variables*/
+var main, x, len, acc1, acc2;
+/*create a membership array*/
+const membership = [
+  "oldMember",
+  "newMember",
+  "notMember",
+  "memberRequest"
+];
+/*create the user object*/
+const user = {
+  firstName: "Moses",
+  lastName: "Max",
+  fullName: function(){
+     return
+this.firstName, this.lastName;
+ }
+}
+/*asign some of the declared variables a value*/
+len = membership.length;
+x = 0;
+main = "";
+/*get the html elements*/
+acc1 = document.getElementById("div1");
+acc2 = document.getElementById("div2");
+/*loop through the array*/
+while(len > x){
+main += membership[x] + "<br>";
+x++
+}
+/*now insert all contents*/
+acc1.innerHTML = main;
+acc2.innerHTML = "i" + " " + user.firstName + " " + "i'm a" + " " + membership[1] + " " + "of this group please welcome me.<p>My full name is:" + " " + user.fullName + " " + "and i am also a JS developer."; 
+/*end of script*/
+</script>
+</body>
+</html>
