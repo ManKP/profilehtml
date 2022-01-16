@@ -1,22 +1,6 @@
-<html>
-<head>
-  <title>Member Login </title>
- </head>
- <body>
- <?
- php include 'lib/config.php';
- ?>
- 
- <form action="" method="POST">
-  <div>
-    <label for="user">Username</label>
-    <input type="text" id="user" name="pass" placeholder="Password" />
- </div>
- 
- <div>
- 
-  <input type="submit" name="send" value="Login..." />
-  </div>
-</form>
-</body>
-</html>
+<?php
+  error_reporting(0)
+    $conn = ,ysql_connect("localhost","root","");
+    mysql_select_db("tuts_member",$conn);
+    mysql_query("SET NAMES UTF8");
+?>
